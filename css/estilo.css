@@ -9,10 +9,23 @@ body{
     font-family: "Helvetica";
     background: rgb(219, 219, 219);
 }
-/******************************************************* Formatação Menu*/
+/******************************************************* Formatação padrão de links*/
 a{
     text-decoration: none;
 }
+a:link, a:visited {
+    color: #f7b600;
+    
+}
+a:hover{
+    text-decoration: underline;
+}
+   
+a:active{
+    color: rgb(247, 37, 37);
+}
+/*****************************************************************************************/
+/**************************************************************************Links do Menu*/
 #area-cabecalho a:link, #area-cabecalho a:visited {
     color: white;
     padding: 8px 12px ;
@@ -23,7 +36,8 @@ a{
 }
 #area-cabecalho a:active{
     color: gray;
-}
+    }
+    /**************************************************************************************/
 /* **************************************************** Layout *** */
 #area-cabecalho{
     background: #f7b600;
@@ -45,20 +59,36 @@ a{
     width: 920px;
     margin: 0 auto; /* ao definir a segunda margem como automatico o navegador vai
                     colocar o conteudo no meio e se ajustar automaticamente*/
-}
+
+    padding: 15px;                }
 #area-postagens{
     width: 660px;
     float: left;
 }
 #area-lateral{
     width: 240px;
-    float: right;
+    float:right;
+    
 }
+.conteudo-lateral{
+    background: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    
+}
+.texto-lateral{
+    font-size: 0,8em;
+    padding: 5px;
+
+}
+
+
     #rodape{
     clear: both;
     text-align: center;
     padding: 15px;
     background: #ccc;
+    
 
 }
 /**************************************************************************/
@@ -72,12 +102,17 @@ h1{
 /* ****************************************************************Postagem*/
 .postagem{
     padding: 20px;
-    margin-bottom: 20pc;
+    margin-bottom: 20px;
     background: rgb(255, 255, 255);
 
 }
 h2{
     color: #f7b600;
+}
+h3{
+    color: #565656;
+    background: #ccc;
+    padding: 5px;
 }
 .data-postagem{
     font-size: 0.8em;
